@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/QuestPackageManager/QPM.Package/refs/heads/main/qpm.schema.json",
+  "sharedDir": "shared",
+  "dependenciesDir": "extern",
+  "version": "0.3.0",
+  "info": {
+    "name": "AdaptiveAudioLatency",
+    "id": "AdaptiveAudioLatency",
+    "version": "1.0.0",
+    "url": "https://github.com/beatsaber-modding/AdaptiveAudioLatency",
+    "additionalData": {
+      "overrideSoName": "libAdaptiveAudioLatency.so",
+      "cmake": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "versionRange": "^6.4.2",
+      "additionalData": {}
+    },
+    {
+      "id": "bs-cordl",
+      "versionRange": "4008.*",
+      "additionalData": {}
+    },
+    {
+      "id": "custom-types",
+      "versionRange": "^0.18.4",
+      "additionalData": {}
+    },
+    {
+      "id": "bsml",
+      "versionRange": "^0.4.55",
+      "additionalData": {}
+    },
+    {
+      "id": "paper2_scotland2",
+      "versionRange": "^4.7.0",
+      "additionalData": {}
+    },
+    {
+      "id": "scotland2",
+      "versionRange": "^0.1.7",
+      "additionalData": {}
+    }
+  ]
+}

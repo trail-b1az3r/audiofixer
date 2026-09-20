@@ -1,0 +1,17 @@
+# ninja log v7
+3	99	1789925652306453837	CMakeFiles/AdaptiveAudioLatency.dir/extern/includes/beatsaber-hook/shared/inline-hook/inlineHook.c.o	cf66aa6b1fa1c673
+99	245	1789925652401345418	CMakeFiles/AdaptiveAudioLatency.dir/extern/includes/beatsaber-hook/shared/inline-hook/relocate.c.o	378fb9451207e127
+245	583	1789925652547343205	CMakeFiles/AdaptiveAudioLatency.dir/extern/includes/beatsaber-hook/shared/inline-hook/And64InlineHook.cpp.o	c49c9203ec95323f
+3	100	1789925675026722843	CMakeFiles/AdaptiveAudioLatency.dir/extern/includes/beatsaber-hook/shared/inline-hook/inlineHook.c.o	7592ab54743cdac4
+100	143	1789925675122000888	CMakeFiles/AdaptiveAudioLatency.dir/extern/includes/beatsaber-hook/shared/inline-hook/relocate.c.o	b60845a7be7cb245
+143	417	1789925675165000235	CMakeFiles/AdaptiveAudioLatency.dir/extern/includes/beatsaber-hook/shared/inline-hook/And64InlineHook.cpp.o	7da688eca861997d
+1	8465	1789925675023002389	CMakeFiles/AdaptiveAudioLatency.dir/src/AdaptiveController.cpp.o	d07107268335d881
+2	10356	1789925675025319978	CMakeFiles/AdaptiveAudioLatency.dir/src/LatencyCalibration.cpp.o	4aa858528859ff48
+1	10425	1789925675024595414	CMakeFiles/AdaptiveAudioLatency.dir/src/AudioOffsetManager.cpp.o	2baecfed22080cc3
+2	10567	1789925675024984453	CMakeFiles/AdaptiveAudioLatency.dir/src/BluetoothDeviceMonitor.cpp.o	45f0c30060b7b946
+2	14602	1789925675025765034	CMakeFiles/AdaptiveAudioLatency.dir/src/UI/DebugOverlay.cpp.o	f998126131268dc
+3	20210	1789925675026126694	CMakeFiles/AdaptiveAudioLatency.dir/src/UI/SettingsViewController.cpp.o	f359abed73142401
+5	6097	1789925858687525289	CMakeFiles/AdaptiveAudioLatency.dir/src/main.cpp.o	2e14a0c4e56e68fd
+5	6754	1789925858687361598	CMakeFiles/AdaptiveAudioLatency.dir/src/ModConfig.cpp.o	69878b6fba60b715
+5	7419	1789925858686214474	CMakeFiles/AdaptiveAudioLatency.dir/src/AudioTimingBridge.cpp.o	98acf65d6daa09ed
+7420	16395	1789925866101101825	libAdaptiveAudioLatency.so	8d25e4667eaab231
