@@ -1,0 +1,275 @@
+diff -ruN a/include/UI/CalibrationTicker.hpp b/include/UI/CalibrationTicker.hpp
+--- a/include/UI/CalibrationTicker.hpp	1970-01-01 00:00:00.000000000 +0000
++++ b/include/UI/CalibrationTicker.hpp	2026-09-20 18:40:06.406261894 +0000
+@@ -0,0 +1,25 @@
++#pragma once
++
++// Nothing in the rest of the codebase ever calls LatencyCalibration::tick(), so the
++// metronome it's supposed to schedule never fires and taps are always ignored
++// (recordUserTap bails out while lastTickDspTime == 0.0). This MonoBehaviour is the
++// missing driver: while calibration is running it calls tick() every frame, and on
++// each tick it plays a short blip and flashes the calibration status text so the
++// user has something to actually tap along to.
++//
++// NOTE: custom-types macro syntax is the one part of this change I couldn't verify
++// against the real headers in this environment (extern/ wasn't populated here) - if
++// this file doesn't compile, paste the error and I'll fix the macro usage directly.
++
++#include "custom-types/shared/macros.hpp"
++#include "custom-types/shared/types.hpp"
++#include "UnityEngine/MonoBehaviour.hpp"
++#include "UnityEngine/AudioSource.hpp"
++
++DECLARE_CLASS_CODEGEN(AdaptiveAudioLatency, CalibrationTicker, UnityEngine::MonoBehaviour,
++    DECLARE_INSTANCE_FIELD(UnityEngine::AudioSource*, audioSource);
++    DECLARE_INSTANCE_FIELD(float, flashTimer);
++
++    DECLARE_METHOD(void, Awake);
++    DECLARE_METHOD(void, Update);
++)
+diff -ruN a/include/UI/SettingsViewController.hpp b/include/UI/SettingsViewController.hpp
+--- a/include/UI/SettingsViewController.hpp	2026-09-20 18:40:06.400198412 +0000
++++ b/include/UI/SettingsViewController.hpp	2026-09-20 18:40:06.406235701 +0000
+@@ -1,6 +1,13 @@
+ #pragma once
+ 
++#include "HMUI/CurvedTextMeshPro.hpp"
++
+ namespace SettingsViewController {
+     void registerMenu();
+     void updateUI();
++
++    // Returns the calibration status text element, or nullptr if the settings
++    // menu hasn't been opened yet this session. Used by CalibrationTicker to
++    // flash a visual cue on each metronome tick.
++    HMUI::CurvedTextMeshPro* getCalibrationIndicator();
+ }
+diff -ruN a/mod.json b/mod.json
+--- a/mod.json	2026-09-20 18:40:06.404623195 +0000
++++ b/mod.json	2026-09-20 18:40:06.410376708 +0000
+@@ -10,10 +10,10 @@
+   "packageVersion": "1.40.8_7379",
+   "description": "Adaptive Audio Latency for Beat Saber 1.40.8_7379. Extended offset (+-1000ms), Bluetooth device detection (AirPods Pro 3), calibration, and conservative adaptive latency correction.",
+   "coverImage": "",
+-  "modFiles": [
++  "modFiles": [],
++  "lateModFiles": [
+     "libAdaptiveAudioLatency.so"
+   ],
+-  "lateModFiles": [],
+   "libraryFiles": [],
+   "fileCopies": [],
+   "copyExtensions": [],
+diff -ruN a/src/AudioTimingBridge.cpp b/src/AudioTimingBridge.cpp
+--- a/src/AudioTimingBridge.cpp	2026-09-20 18:40:06.404736649 +0000
++++ b/src/AudioTimingBridge.cpp	2026-09-20 18:40:06.410487945 +0000
+@@ -57,17 +57,21 @@
+     void,
+     GlobalNamespace::AudioTimeSyncController* self) {
+ 
+-    AudioTimeSyncController_Start(self);
++    if (ModConfig::get().modEnabled) {
++        AudioOffsetManager::get().onLevelStart();
+ 
+-    if (!ModConfig::get().modEnabled) return;
++        // Apply the effective offset BEFORE the original Start() runs: it reads
++        // audioLatency internally to compute its DSP timing baseline for this level,
++        // so setting it after the call is too late to affect that baseline.
++        float effectiveSec = AudioOffsetManager::get().getEffectiveOffsetSeconds();
++        self->____audioLatency = effectiveSec;
++        LOG_INFO("AudioTimeSyncController::Start - Applied effective audioLatency: {}s ({}ms)",
++            effectiveSec, AudioOffsetManager::get().getEffectiveOffsetMs());
++    }
+ 
+-    AudioOffsetManager::get().onLevelStart();
++    AudioTimeSyncController_Start(self);
+ 
+-    // Apply effective offset in seconds
+-    float effectiveSec = AudioOffsetManager::get().getEffectiveOffsetSeconds();
+-    self->____audioLatency = effectiveSec;
+-    LOG_INFO("AudioTimeSyncController::Start - Applied effective audioLatency: {}s ({}ms)",
+-        effectiveSec, AudioOffsetManager::get().getEffectiveOffsetMs());
++    if (!ModConfig::get().modEnabled) return;
+ 
+     DebugOverlay::show();
+ }
+@@ -79,12 +83,12 @@
+     GlobalNamespace::AudioTimeSyncController* self,
+     float_t startTimeOffset) {
+ 
+-    AudioTimeSyncController_StartSong(self, startTimeOffset);
+-
+     if (ModConfig::get().modEnabled) {
+         AdaptiveController::get().reset();
+         self->____audioLatency = AudioOffsetManager::get().getEffectiveOffsetSeconds();
+     }
++
++    AudioTimeSyncController_StartSong(self, startTimeOffset);
+ }
+ 
+ // Hook 5: GlobalNamespace::AudioTimeSyncController.Update
+diff -ruN a/src/UI/CalibrationTicker.cpp b/src/UI/CalibrationTicker.cpp
+--- a/src/UI/CalibrationTicker.cpp	1970-01-01 00:00:00.000000000 +0000
++++ b/src/UI/CalibrationTicker.cpp	2026-09-20 18:40:06.410622855 +0000
+@@ -0,0 +1,73 @@
++#include "UI/CalibrationTicker.hpp"
++#include "LatencyCalibration.hpp"
++#include "UI/SettingsViewController.hpp"
++#include "main.hpp"
++
++#include "UnityEngine/AudioClip.hpp"
++#include "UnityEngine/AudioSettings.hpp"
++#include "UnityEngine/Time.hpp"
++#include "UnityEngine/Color.hpp"
++#include "beatsaber-hook/shared/utils/typedefs-wrappers.hpp"
++
++#include <cmath>
++
++DEFINE_TYPE(AdaptiveAudioLatency, CalibrationTicker);
++
++using namespace UnityEngine;
++
++namespace {
++constexpr int kSampleRate = 44100;
++constexpr float kDurationSec = 0.08f;
++constexpr float kBlipHz = 1000.0f;
++constexpr float kFlashSeconds = 0.15f;
++}
++
++void AdaptiveAudioLatency::CalibrationTicker::Awake() {
++    audioSource = get_gameObject()->AddComponent<AudioSource*>();
++    audioSource->set_playOnAwake(false);
++    audioSource->set_spatialBlend(0.0f);
++    audioSource->set_volume(0.6f);
++
++    int sampleCount = static_cast<int>(kSampleRate * kDurationSec);
++    ArrayW<float> data(sampleCount);
++    for (int i = 0; i < sampleCount; i++) {
++        float t = static_cast<float>(i) / static_cast<float>(kSampleRate);
++        // Linear fade-out envelope so the blip doesn't click at the tail.
++        float envelope = 1.0f - (static_cast<float>(i) / static_cast<float>(sampleCount));
++        data[i] = std::sin(2.0f * static_cast<float>(M_PI) * kBlipHz * t) * 0.5f * envelope;
++    }
++
++    auto clip = AudioClip::Create(StringW("CalibrationBlip"), sampleCount, 1, kSampleRate, false);
++    clip->SetData(data, 0);
++    audioSource->set_clip(clip);
++
++    flashTimer = 0.0f;
++    LOG_INFO("CalibrationTicker ready");
++}
++
++void AdaptiveAudioLatency::CalibrationTicker::Update() {
++    if (!LatencyCalibration::get().isRunning()) {
++        return;
++    }
++
++    double dspNow = AudioSettings::get_dspTime();
++    if (LatencyCalibration::get().tick(dspNow)) {
++        if (audioSource) {
++            audioSource->Play();
++        }
++        flashTimer = kFlashSeconds;
++        if (auto* indicator = SettingsViewController::getCalibrationIndicator()) {
++            indicator->set_color(Color(1.0f, 0.85f, 0.2f, 1.0f));
++        }
++    }
++
++    if (flashTimer > 0.0f) {
++        flashTimer -= Time::get_deltaTime();
++        if (flashTimer <= 0.0f) {
++            flashTimer = 0.0f;
++            if (auto* indicator = SettingsViewController::getCalibrationIndicator()) {
++                indicator->set_color(Color(1.0f, 1.0f, 1.0f, 1.0f));
++            }
++        }
++    }
++}
+diff -ruN a/src/UI/SettingsViewController.cpp b/src/UI/SettingsViewController.cpp
+--- a/src/UI/SettingsViewController.cpp	2026-09-20 18:40:06.404876463 +0000
++++ b/src/UI/SettingsViewController.cpp	2026-09-20 18:40:06.410603541 +0000
+@@ -13,8 +13,13 @@
+ #include "bsml/shared/BSML-Lite/Creation/Layout.hpp"
+ #include "HMUI/CurvedTextMeshPro.hpp"
+ #include "UnityEngine/AudioSettings.hpp"
++#include "UnityEngine/UI/LayoutElement.hpp"
++#include "UnityEngine/GameObject.hpp"
++#include "UnityEngine/Object.hpp"
++#include "UI/CalibrationTicker.hpp"
+ #include "beatsaber-hook/shared/utils/typedefs-wrappers.hpp"
+ 
++#include <algorithm>
+ #include <iomanip>
+ #include <sstream>
+ 
+@@ -22,6 +27,21 @@
+ SafePtrUnity<HMUI::CurvedTextMeshPro> gDeviceInfoText;
+ SafePtrUnity<HMUI::CurvedTextMeshPro> gCalibrationStatusText;
+ SafePtrUnity<BSML::IncrementSetting> gOffsetSetting;
++SafePtrUnity<AdaptiveAudioLatency::CalibrationTicker> gTicker;
++
++// Plain CreateText is sized for a single line; multi-line status blocks need an
++// explicitly taller LayoutElement or the vertical layout group only reserves
++// single-line height and later controls get drawn on top of the overflow.
++void sizeMultilineText(HMUI::CurvedTextMeshPro* text, const std::string& content) {
++    if (!text) return;
++    int lines = static_cast<int>(std::count(content.begin(), content.end(), '\n')) + 1;
++    auto* layout = text->GetComponent<UnityEngine::UI::LayoutElement*>();
++    if (!layout) {
++        layout = text->get_gameObject()->AddComponent<UnityEngine::UI::LayoutElement*>();
++    }
++    // ~9 units/line matches BSML-Lite's default single-line row height; tune to taste.
++    layout->set_preferredHeight(9.0f * static_cast<float>(lines));
++}
+ 
+ std::string formatDeviceInfo() {
+     auto dev = BluetoothDeviceMonitor::get().getCurrentDevice();
+@@ -56,16 +76,24 @@
+ 
+ void updateUI() {
+     if (gDeviceInfoText) {
+-        gDeviceInfoText->set_text(StringW(formatDeviceInfo()));
++        auto content = formatDeviceInfo();
++        gDeviceInfoText->set_text(StringW(content));
++        sizeMultilineText(gDeviceInfoText.ptr(), content);
+     }
+     if (gCalibrationStatusText) {
+-        gCalibrationStatusText->set_text(StringW(formatCalibrationInfo()));
++        auto content = formatCalibrationInfo();
++        gCalibrationStatusText->set_text(StringW(content));
++        sizeMultilineText(gCalibrationStatusText.ptr(), content);
+     }
+     if (gOffsetSetting) {
+         gOffsetSetting->set_Value(AudioOffsetManager::get().getBaseOffsetMs());
+     }
+ }
+ 
++HMUI::CurvedTextMeshPro* getCalibrationIndicator() {
++    return gCalibrationStatusText.ptr();
++}
++
+ void registerMenu() {
+     BSML::BSMLSettings::get_instance()->TryAddSettingsMenu(
+         [](HMUI::ViewController* viewController, bool firstActivation, bool, bool) {
+@@ -89,6 +117,7 @@
+             // 2. Bluetooth Device Info Header
+             BSML::Lite::CreateText(transform, u"<b>--- Bluetooth & Audio Device ---</b>");
+             gDeviceInfoText = BSML::Lite::CreateText(transform, StringW(formatDeviceInfo()));
++            sizeMultilineText(gDeviceInfoText.ptr(), formatDeviceInfo());
+ 
+             // Refresh Device Button
+             BSML::Lite::CreateUIButton(transform, u"Refresh Bluetooth Status", []() {
+@@ -131,6 +160,13 @@
+             // 4. Calibration Section
+             BSML::Lite::CreateText(transform, u"<b>--- AirPods / Device Calibration ---</b>");
+             gCalibrationStatusText = BSML::Lite::CreateText(transform, StringW(formatCalibrationInfo()));
++            sizeMultilineText(gCalibrationStatusText.ptr(), formatCalibrationInfo());
++
++            if (!gTicker) {
++                auto tickerGo = UnityEngine::GameObject::New_ctor(StringW("AdaptiveAudioLatency_CalibrationTicker"));
++                UnityEngine::Object::DontDestroyOnLoad(tickerGo);
++                gTicker = tickerGo->AddComponent<AdaptiveAudioLatency::CalibrationTicker*>();
++            }
+ 
+             LatencyCalibration::get().setStatsUpdateCallback([](const CalibrationStats&) {
+                 updateUI();

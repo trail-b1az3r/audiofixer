@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/ceo/Downloads/audiofixer/build/cmake_install.cmake"
+		"/home/ceo/audiofixer/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

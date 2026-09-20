@@ -57,17 +57,21 @@ MAKE_HOOK_MATCH(AudioTimeSyncController_Start,
     void,
     GlobalNamespace::AudioTimeSyncController* self) {
 
+    if (ModConfig::get().modEnabled) {
+        AudioOffsetManager::get().onLevelStart();
+
+        // Apply the effective offset BEFORE the original Start() runs: it reads
+        // audioLatency internally to compute its DSP timing baseline for this level,
+        // so setting it after the call is too late to affect that baseline.
+        float effectiveSec = AudioOffsetManager::get().getEffectiveOffsetSeconds();
+        self->____audioLatency = effectiveSec;
+        LOG_INFO("AudioTimeSyncController::Start - Applied effective audioLatency: {}s ({}ms)",
+            effectiveSec, AudioOffsetManager::get().getEffectiveOffsetMs());
+    }
+
     AudioTimeSyncController_Start(self);
 
     if (!ModConfig::get().modEnabled) return;
-
-    AudioOffsetManager::get().onLevelStart();
-
-    // Apply effective offset in seconds
-    float effectiveSec = AudioOffsetManager::get().getEffectiveOffsetSeconds();
-    self->____audioLatency = effectiveSec;
-    LOG_INFO("AudioTimeSyncController::Start - Applied effective audioLatency: {}s ({}ms)",
-        effectiveSec, AudioOffsetManager::get().getEffectiveOffsetMs());
 
     DebugOverlay::show();
 }
@@ -79,12 +83,12 @@ MAKE_HOOK_MATCH(AudioTimeSyncController_StartSong,
     GlobalNamespace::AudioTimeSyncController* self,
     float_t startTimeOffset) {
 
-    AudioTimeSyncController_StartSong(self, startTimeOffset);
-
     if (ModConfig::get().modEnabled) {
         AdaptiveController::get().reset();
         self->____audioLatency = AudioOffsetManager::get().getEffectiveOffsetSeconds();
     }
+
+    AudioTimeSyncController_StartSong(self, startTimeOffset);
 }
 
 // Hook 5: GlobalNamespace::AudioTimeSyncController.Update

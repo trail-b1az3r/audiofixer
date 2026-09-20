@@ -1,3 +1,3 @@
-/home/ceo/Downloads/audiofixer/build/CMakeFiles/AdaptiveAudioLatency.dir
-/home/ceo/Downloads/audiofixer/build/CMakeFiles/edit_cache.dir
-/home/ceo/Downloads/audiofixer/build/CMakeFiles/rebuild_cache.dir
+/home/ceo/audiofixer/build/CMakeFiles/AdaptiveAudioLatency.dir
+/home/ceo/audiofixer/build/CMakeFiles/edit_cache.dir
+/home/ceo/audiofixer/build/CMakeFiles/rebuild_cache.dir

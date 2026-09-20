@@ -10,10 +10,10 @@
   "packageVersion": "1.40.8_7379",
   "description": "Adaptive Audio Latency for Beat Saber 1.40.8_7379. Extended offset (+-1000ms), Bluetooth device detection (AirPods Pro 3), calibration, and conservative adaptive latency correction.",
   "coverImage": "",
-  "modFiles": [
+  "modFiles": [],
+  "lateModFiles": [
     "libAdaptiveAudioLatency.so"
   ],
-  "lateModFiles": [],
   "libraryFiles": [],
   "fileCopies": [],
   "copyExtensions": [],

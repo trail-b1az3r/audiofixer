@@ -20,15 +20,11 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -41,29 +37,21 @@ events:
       - "/usr/lib/rustup/bin/"
       - "/bin/"
     searched_directories:
-      - "/home/ceo/.gemini/antigravity/bin/uname"
-      - "/home/ceo/.config/Antigravity/bin/uname"
       - "/home/ceo/.opencode/bin/uname"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/uname"
       - "/home/ceo/.local/bin/uname"
       - "/home/ceo/.npm-global/bin/uname"
       - "/opt/cuda/bin/uname"
-      - "/tmp/.mount_Antigr20RtUN/uname"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/uname"
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -81,7 +69,7 @@ events:
       - "CMakeLists.txt:25 (project)"
     message: |
       The target system is: Android - 24 - aarch64
-      The host system is: Linux - 7.2.4-arch1-2 - x86_64
+      The host system is: Linux - 7.2.6-arch2-1 - x86_64
   -
     kind: "find-v1"
     backtrace:
@@ -103,15 +91,11 @@ events:
       - "ninja"
       - "samu"
     candidate_directories:
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.gemini/antigravity/bin/"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.config/Antigravity/bin/"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.opencode/bin/"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.local/bin/"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.npm-global/bin/"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/opt/cuda/bin/"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/tmp/.mount_Antigr20RtUN/"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/sbin/"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/bin/"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/bin/"
@@ -122,15 +106,11 @@ events:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/bin/vendor_perl/"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/bin/core_perl/"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/rustup/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -142,12 +122,6 @@ events:
       - "/usr/bin/core_perl/"
       - "/usr/lib/rustup/bin/"
     searched_directories:
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.gemini/antigravity/bin/ninja-build"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.gemini/antigravity/bin/ninja"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.gemini/antigravity/bin/samu"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.config/Antigravity/bin/ninja-build"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.config/Antigravity/bin/ninja"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.config/Antigravity/bin/samu"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.opencode/bin/ninja-build"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.opencode/bin/ninja"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/home/ceo/.opencode/bin/samu"
@@ -163,12 +137,6 @@ events:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/opt/cuda/bin/ninja-build"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/opt/cuda/bin/ninja"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/opt/cuda/bin/samu"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/tmp/.mount_Antigr20RtUN/ninja-build"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/tmp/.mount_Antigr20RtUN/ninja"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/tmp/.mount_Antigr20RtUN/samu"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/tmp/.mount_Antigr20RtUN/usr/sbin/ninja-build"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/tmp/.mount_Antigr20RtUN/usr/sbin/ninja"
-      - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/tmp/.mount_Antigr20RtUN/usr/sbin/samu"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/sbin/ninja-build"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/sbin/ninja"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/sbin/samu"
@@ -199,12 +167,6 @@ events:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/rustup/bin/ninja-build"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/rustup/bin/ninja"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/rustup/bin/samu"
-      - "/home/ceo/.gemini/antigravity/bin/ninja-build"
-      - "/home/ceo/.gemini/antigravity/bin/ninja"
-      - "/home/ceo/.gemini/antigravity/bin/samu"
-      - "/home/ceo/.config/Antigravity/bin/ninja-build"
-      - "/home/ceo/.config/Antigravity/bin/ninja"
-      - "/home/ceo/.config/Antigravity/bin/samu"
       - "/home/ceo/.opencode/bin/ninja-build"
       - "/home/ceo/.opencode/bin/ninja"
       - "/home/ceo/.opencode/bin/samu"
@@ -215,15 +177,11 @@ events:
     found: "/home/ceo/.local/bin/ninja"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -262,15 +220,11 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -305,7 +259,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is Clang, found in:
-        /home/ceo/Downloads/audiofixer/build/CMakeFiles/4.4.3/CompilerIdC/a.out
+        /home/ceo/audiofixer/build/CMakeFiles/4.4.3/CompilerIdC/a.out
       
   -
     kind: "find-v1"
@@ -331,15 +285,11 @@ events:
       - "ar"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -355,15 +305,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ar"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ar"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ar"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ar"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ar"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ar"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ar"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ar"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ar"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ar"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ar"
       - "/usr/local/bin/aarch64-linux-android-llvm-ar"
       - "/usr/bin/aarch64-linux-android-llvm-ar"
@@ -380,15 +326,11 @@ events:
     found: "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -429,15 +371,11 @@ events:
       - "ranlib"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -453,15 +391,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ranlib"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ranlib"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ranlib"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ranlib"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ranlib"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ranlib"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ranlib"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ranlib"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ranlib"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ranlib"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ranlib"
       - "/usr/local/bin/aarch64-linux-android-llvm-ranlib"
       - "/usr/bin/aarch64-linux-android-llvm-ranlib"
@@ -478,15 +412,11 @@ events:
     found: "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -527,15 +457,11 @@ events:
       - "strip"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -551,15 +477,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-strip"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-strip"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-strip"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-strip"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-strip"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-strip"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-strip"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-strip"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-strip"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-strip"
       - "/usr/local/sbin/aarch64-linux-android-llvm-strip"
       - "/usr/local/bin/aarch64-linux-android-llvm-strip"
       - "/usr/bin/aarch64-linux-android-llvm-strip"
@@ -576,15 +498,11 @@ events:
     found: "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-strip"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -625,15 +543,11 @@ events:
       - "ld"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -649,15 +563,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-ld.lld"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-ld.lld"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-ld.lld"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-ld.lld"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-ld.lld"
       - "/home/ceo/.local/bin/aarch64-linux-android-ld.lld"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-ld.lld"
       - "/opt/cuda/bin/aarch64-linux-android-ld.lld"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-ld.lld"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-ld.lld"
       - "/usr/local/sbin/aarch64-linux-android-ld.lld"
       - "/usr/local/bin/aarch64-linux-android-ld.lld"
       - "/usr/bin/aarch64-linux-android-ld.lld"
@@ -674,15 +584,11 @@ events:
     found: "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -723,15 +629,11 @@ events:
       - "nm"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -747,15 +649,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-nm"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-nm"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-nm"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-nm"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-nm"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-nm"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-nm"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-nm"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-nm"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-nm"
       - "/usr/local/sbin/aarch64-linux-android-llvm-nm"
       - "/usr/local/bin/aarch64-linux-android-llvm-nm"
       - "/usr/bin/aarch64-linux-android-llvm-nm"
@@ -772,15 +670,11 @@ events:
     found: "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-nm"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -821,15 +715,11 @@ events:
       - "objdump"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -845,15 +735,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-objdump"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-objdump"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-objdump"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-objdump"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-objdump"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-objdump"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-objdump"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-objdump"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-objdump"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-objdump"
       - "/usr/local/sbin/aarch64-linux-android-llvm-objdump"
       - "/usr/local/bin/aarch64-linux-android-llvm-objdump"
       - "/usr/bin/aarch64-linux-android-llvm-objdump"
@@ -870,15 +756,11 @@ events:
     found: "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -919,15 +801,11 @@ events:
       - "objcopy"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -943,15 +821,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-objcopy"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-objcopy"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-objcopy"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-objcopy"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-objcopy"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-objcopy"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-objcopy"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-objcopy"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-objcopy"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-objcopy"
       - "/usr/local/sbin/aarch64-linux-android-llvm-objcopy"
       - "/usr/local/bin/aarch64-linux-android-llvm-objcopy"
       - "/usr/bin/aarch64-linux-android-llvm-objcopy"
@@ -968,15 +842,11 @@ events:
     found: "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objcopy"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1017,15 +887,11 @@ events:
       - "readelf"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1041,15 +907,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-readelf"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-readelf"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-readelf"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-readelf"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-readelf"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-readelf"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-readelf"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-readelf"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-readelf"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-readelf"
       - "/usr/local/sbin/aarch64-linux-android-llvm-readelf"
       - "/usr/local/bin/aarch64-linux-android-llvm-readelf"
       - "/usr/bin/aarch64-linux-android-llvm-readelf"
@@ -1066,15 +928,11 @@ events:
     found: "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1115,15 +973,11 @@ events:
       - "dlltool"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1139,15 +993,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-dlltool"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-dlltool"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-dlltool"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-dlltool"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-dlltool"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-dlltool"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-dlltool"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-dlltool"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-dlltool"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-dlltool"
       - "/usr/local/sbin/aarch64-linux-android-llvm-dlltool"
       - "/usr/local/bin/aarch64-linux-android-llvm-dlltool"
       - "/usr/bin/aarch64-linux-android-llvm-dlltool"
@@ -1162,29 +1012,21 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-llvm-dlltool"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-llvm-dlltool"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-dlltool"
-      - "/home/ceo/.gemini/antigravity/bin/llvm-dlltool"
-      - "/home/ceo/.config/Antigravity/bin/llvm-dlltool"
       - "/home/ceo/.opencode/bin/llvm-dlltool"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/llvm-dlltool"
       - "/home/ceo/.local/bin/llvm-dlltool"
       - "/home/ceo/.npm-global/bin/llvm-dlltool"
       - "/opt/cuda/bin/llvm-dlltool"
-      - "/tmp/.mount_Antigr20RtUN/llvm-dlltool"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/llvm-dlltool"
       - "/usr/local/sbin/llvm-dlltool"
       - "/usr/local/bin/llvm-dlltool"
     found: "/usr/bin/llvm-dlltool"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1225,15 +1067,11 @@ events:
       - "addr2line"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1249,15 +1087,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-addr2line"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-addr2line"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-addr2line"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-addr2line"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-addr2line"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-addr2line"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-addr2line"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-addr2line"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-addr2line"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-addr2line"
       - "/usr/local/sbin/aarch64-linux-android-llvm-addr2line"
       - "/usr/local/bin/aarch64-linux-android-llvm-addr2line"
       - "/usr/bin/aarch64-linux-android-llvm-addr2line"
@@ -1274,15 +1108,11 @@ events:
     found: "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-addr2line"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1321,15 +1151,11 @@ events:
       - "tapi"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1345,15 +1171,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-tapi"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-tapi"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-tapi"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-tapi"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-tapi"
       - "/home/ceo/.local/bin/aarch64-linux-android-tapi"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-tapi"
       - "/opt/cuda/bin/aarch64-linux-android-tapi"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-tapi"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-tapi"
       - "/usr/local/sbin/aarch64-linux-android-tapi"
       - "/usr/local/bin/aarch64-linux-android-tapi"
       - "/usr/bin/aarch64-linux-android-tapi"
@@ -1368,15 +1190,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-tapi"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-tapi"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/tapi"
-      - "/home/ceo/.gemini/antigravity/bin/tapi"
-      - "/home/ceo/.config/Antigravity/bin/tapi"
       - "/home/ceo/.opencode/bin/tapi"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/tapi"
       - "/home/ceo/.local/bin/tapi"
       - "/home/ceo/.npm-global/bin/tapi"
       - "/opt/cuda/bin/tapi"
-      - "/tmp/.mount_Antigr20RtUN/tapi"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/tapi"
       - "/usr/local/sbin/tapi"
       - "/usr/local/bin/tapi"
       - "/usr/bin/tapi"
@@ -1393,15 +1211,11 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1442,15 +1256,11 @@ events:
       - "aarch64-linux-android-llvm-ar"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1466,15 +1276,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ar-17.0"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ar-17.0"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ar-17.0"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ar-17.0"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ar-17.0"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ar-17.0"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ar-17.0"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ar-17.0"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ar-17.0"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ar-17.0"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ar-17.0"
       - "/usr/local/bin/aarch64-linux-android-llvm-ar-17.0"
       - "/usr/bin/aarch64-linux-android-llvm-ar-17.0"
@@ -1489,15 +1295,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-llvm-ar-17.0"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-llvm-ar-17.0"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ar-17"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ar-17"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ar-17"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ar-17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ar-17"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ar-17"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ar-17"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ar-17"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ar-17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ar-17"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ar-17"
       - "/usr/local/bin/aarch64-linux-android-llvm-ar-17"
       - "/usr/bin/aarch64-linux-android-llvm-ar-17"
@@ -1512,15 +1314,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-llvm-ar-17"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-llvm-ar-17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ar17"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ar17"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ar17"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ar17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ar17"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ar17"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ar17"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ar17"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ar17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ar17"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ar17"
       - "/usr/local/bin/aarch64-linux-android-llvm-ar17"
       - "/usr/bin/aarch64-linux-android-llvm-ar17"
@@ -1535,15 +1333,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-llvm-ar17"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-llvm-ar17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ar"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ar"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ar"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ar"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ar"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ar"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ar"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ar"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ar"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ar"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ar"
       - "/usr/local/bin/aarch64-linux-android-llvm-ar"
       - "/usr/bin/aarch64-linux-android-llvm-ar"
@@ -1560,15 +1354,11 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1609,15 +1399,11 @@ events:
       - "aarch64-linux-android-llvm-ranlib"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1633,15 +1419,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ranlib-17.0"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ranlib-17.0"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ranlib-17.0"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ranlib-17.0"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/usr/local/bin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/usr/bin/aarch64-linux-android-llvm-ranlib-17.0"
@@ -1656,15 +1438,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-llvm-ranlib-17.0"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ranlib-17"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ranlib-17"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ranlib-17"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ranlib-17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ranlib-17"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ranlib-17"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ranlib-17"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ranlib-17"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ranlib-17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ranlib-17"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ranlib-17"
       - "/usr/local/bin/aarch64-linux-android-llvm-ranlib-17"
       - "/usr/bin/aarch64-linux-android-llvm-ranlib-17"
@@ -1679,15 +1457,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-llvm-ranlib-17"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-llvm-ranlib-17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ranlib17"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ranlib17"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ranlib17"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ranlib17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ranlib17"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ranlib17"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ranlib17"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ranlib17"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ranlib17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ranlib17"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ranlib17"
       - "/usr/local/bin/aarch64-linux-android-llvm-ranlib17"
       - "/usr/bin/aarch64-linux-android-llvm-ranlib17"
@@ -1702,15 +1476,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-llvm-ranlib17"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-llvm-ranlib17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ranlib"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ranlib"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ranlib"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ranlib"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ranlib"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ranlib"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ranlib"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ranlib"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ranlib"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ranlib"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ranlib"
       - "/usr/local/bin/aarch64-linux-android-llvm-ranlib"
       - "/usr/bin/aarch64-linux-android-llvm-ranlib"
@@ -1727,15 +1497,11 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1780,15 +1546,11 @@ events:
       - "clang-scan-deps"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1804,15 +1566,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-clang-scan-deps-17.0"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-clang-scan-deps-17.0"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/home/ceo/.local/bin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/opt/cuda/bin/aarch64-linux-android-clang-scan-deps-17.0"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-clang-scan-deps-17.0"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/usr/local/sbin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/usr/local/bin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/usr/bin/aarch64-linux-android-clang-scan-deps-17.0"
@@ -1827,15 +1585,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-clang-scan-deps-17.0"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-clang-scan-deps-17"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-clang-scan-deps-17"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-clang-scan-deps-17"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-clang-scan-deps-17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-clang-scan-deps-17"
       - "/home/ceo/.local/bin/aarch64-linux-android-clang-scan-deps-17"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-clang-scan-deps-17"
       - "/opt/cuda/bin/aarch64-linux-android-clang-scan-deps-17"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-clang-scan-deps-17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-clang-scan-deps-17"
       - "/usr/local/sbin/aarch64-linux-android-clang-scan-deps-17"
       - "/usr/local/bin/aarch64-linux-android-clang-scan-deps-17"
       - "/usr/bin/aarch64-linux-android-clang-scan-deps-17"
@@ -1850,15 +1604,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-clang-scan-deps-17"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-clang-scan-deps-17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-clang-scan-deps17"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-clang-scan-deps17"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-clang-scan-deps17"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-clang-scan-deps17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-clang-scan-deps17"
       - "/home/ceo/.local/bin/aarch64-linux-android-clang-scan-deps17"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-clang-scan-deps17"
       - "/opt/cuda/bin/aarch64-linux-android-clang-scan-deps17"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-clang-scan-deps17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-clang-scan-deps17"
       - "/usr/local/sbin/aarch64-linux-android-clang-scan-deps17"
       - "/usr/local/bin/aarch64-linux-android-clang-scan-deps17"
       - "/usr/bin/aarch64-linux-android-clang-scan-deps17"
@@ -1873,15 +1623,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-clang-scan-deps17"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-clang-scan-deps17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-clang-scan-deps"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-clang-scan-deps"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-clang-scan-deps"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-clang-scan-deps"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-clang-scan-deps"
       - "/home/ceo/.local/bin/aarch64-linux-android-clang-scan-deps"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-clang-scan-deps"
       - "/opt/cuda/bin/aarch64-linux-android-clang-scan-deps"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-clang-scan-deps"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-clang-scan-deps"
       - "/usr/local/sbin/aarch64-linux-android-clang-scan-deps"
       - "/usr/local/bin/aarch64-linux-android-clang-scan-deps"
       - "/usr/bin/aarch64-linux-android-clang-scan-deps"
@@ -1896,15 +1642,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-clang-scan-deps"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-clang-scan-deps"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang-scan-deps-17.0"
-      - "/home/ceo/.gemini/antigravity/bin/clang-scan-deps-17.0"
-      - "/home/ceo/.config/Antigravity/bin/clang-scan-deps-17.0"
       - "/home/ceo/.opencode/bin/clang-scan-deps-17.0"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/clang-scan-deps-17.0"
       - "/home/ceo/.local/bin/clang-scan-deps-17.0"
       - "/home/ceo/.npm-global/bin/clang-scan-deps-17.0"
       - "/opt/cuda/bin/clang-scan-deps-17.0"
-      - "/tmp/.mount_Antigr20RtUN/clang-scan-deps-17.0"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/clang-scan-deps-17.0"
       - "/usr/local/sbin/clang-scan-deps-17.0"
       - "/usr/local/bin/clang-scan-deps-17.0"
       - "/usr/bin/clang-scan-deps-17.0"
@@ -1919,15 +1661,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/clang-scan-deps-17.0"
       - "/usr/lib/aarch64-linux-android/24/clang-scan-deps-17.0"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang-scan-deps-17"
-      - "/home/ceo/.gemini/antigravity/bin/clang-scan-deps-17"
-      - "/home/ceo/.config/Antigravity/bin/clang-scan-deps-17"
       - "/home/ceo/.opencode/bin/clang-scan-deps-17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/clang-scan-deps-17"
       - "/home/ceo/.local/bin/clang-scan-deps-17"
       - "/home/ceo/.npm-global/bin/clang-scan-deps-17"
       - "/opt/cuda/bin/clang-scan-deps-17"
-      - "/tmp/.mount_Antigr20RtUN/clang-scan-deps-17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/clang-scan-deps-17"
       - "/usr/local/sbin/clang-scan-deps-17"
       - "/usr/local/bin/clang-scan-deps-17"
       - "/usr/bin/clang-scan-deps-17"
@@ -1942,15 +1680,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/clang-scan-deps-17"
       - "/usr/lib/aarch64-linux-android/24/clang-scan-deps-17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang-scan-deps17"
-      - "/home/ceo/.gemini/antigravity/bin/clang-scan-deps17"
-      - "/home/ceo/.config/Antigravity/bin/clang-scan-deps17"
       - "/home/ceo/.opencode/bin/clang-scan-deps17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/clang-scan-deps17"
       - "/home/ceo/.local/bin/clang-scan-deps17"
       - "/home/ceo/.npm-global/bin/clang-scan-deps17"
       - "/opt/cuda/bin/clang-scan-deps17"
-      - "/tmp/.mount_Antigr20RtUN/clang-scan-deps17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/clang-scan-deps17"
       - "/usr/local/sbin/clang-scan-deps17"
       - "/usr/local/bin/clang-scan-deps17"
       - "/usr/bin/clang-scan-deps17"
@@ -1965,29 +1699,21 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/clang-scan-deps17"
       - "/usr/lib/aarch64-linux-android/24/clang-scan-deps17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang-scan-deps"
-      - "/home/ceo/.gemini/antigravity/bin/clang-scan-deps"
-      - "/home/ceo/.config/Antigravity/bin/clang-scan-deps"
       - "/home/ceo/.opencode/bin/clang-scan-deps"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/clang-scan-deps"
       - "/home/ceo/.local/bin/clang-scan-deps"
       - "/home/ceo/.npm-global/bin/clang-scan-deps"
       - "/opt/cuda/bin/clang-scan-deps"
-      - "/tmp/.mount_Antigr20RtUN/clang-scan-deps"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/clang-scan-deps"
       - "/usr/local/sbin/clang-scan-deps"
       - "/usr/local/bin/clang-scan-deps"
     found: "/usr/bin/clang-scan-deps"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -2031,15 +1757,11 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -2074,7 +1796,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is Clang, found in:
-        /home/ceo/Downloads/audiofixer/build/CMakeFiles/4.4.3/CompilerIdCXX/a.out
+        /home/ceo/audiofixer/build/CMakeFiles/4.4.3/CompilerIdCXX/a.out
       
   -
     kind: "find-v1"
@@ -2100,15 +1822,11 @@ events:
       - "aarch64-linux-android-llvm-ar"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -2124,15 +1842,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ar-17.0"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ar-17.0"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ar-17.0"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ar-17.0"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ar-17.0"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ar-17.0"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ar-17.0"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ar-17.0"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ar-17.0"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ar-17.0"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ar-17.0"
       - "/usr/local/bin/aarch64-linux-android-llvm-ar-17.0"
       - "/usr/bin/aarch64-linux-android-llvm-ar-17.0"
@@ -2147,15 +1861,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-llvm-ar-17.0"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-llvm-ar-17.0"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ar-17"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ar-17"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ar-17"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ar-17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ar-17"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ar-17"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ar-17"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ar-17"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ar-17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ar-17"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ar-17"
       - "/usr/local/bin/aarch64-linux-android-llvm-ar-17"
       - "/usr/bin/aarch64-linux-android-llvm-ar-17"
@@ -2170,15 +1880,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-llvm-ar-17"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-llvm-ar-17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ar17"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ar17"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ar17"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ar17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ar17"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ar17"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ar17"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ar17"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ar17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ar17"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ar17"
       - "/usr/local/bin/aarch64-linux-android-llvm-ar17"
       - "/usr/bin/aarch64-linux-android-llvm-ar17"
@@ -2193,15 +1899,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-llvm-ar17"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-llvm-ar17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ar"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ar"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ar"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ar"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ar"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ar"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ar"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ar"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ar"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ar"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ar"
       - "/usr/local/bin/aarch64-linux-android-llvm-ar"
       - "/usr/bin/aarch64-linux-android-llvm-ar"
@@ -2218,15 +1920,11 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -2267,15 +1965,11 @@ events:
       - "aarch64-linux-android-llvm-ranlib"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -2291,15 +1985,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ranlib-17.0"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ranlib-17.0"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ranlib-17.0"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ranlib-17.0"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/usr/local/bin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/usr/bin/aarch64-linux-android-llvm-ranlib-17.0"
@@ -2314,15 +2004,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-llvm-ranlib-17.0"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-llvm-ranlib-17.0"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ranlib-17"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ranlib-17"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ranlib-17"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ranlib-17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ranlib-17"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ranlib-17"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ranlib-17"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ranlib-17"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ranlib-17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ranlib-17"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ranlib-17"
       - "/usr/local/bin/aarch64-linux-android-llvm-ranlib-17"
       - "/usr/bin/aarch64-linux-android-llvm-ranlib-17"
@@ -2337,15 +2023,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-llvm-ranlib-17"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-llvm-ranlib-17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ranlib17"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ranlib17"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ranlib17"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ranlib17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ranlib17"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ranlib17"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ranlib17"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ranlib17"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ranlib17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ranlib17"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ranlib17"
       - "/usr/local/bin/aarch64-linux-android-llvm-ranlib17"
       - "/usr/bin/aarch64-linux-android-llvm-ranlib17"
@@ -2360,15 +2042,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-llvm-ranlib17"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-llvm-ranlib17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-llvm-ranlib"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-llvm-ranlib"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-llvm-ranlib"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-llvm-ranlib"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-llvm-ranlib"
       - "/home/ceo/.local/bin/aarch64-linux-android-llvm-ranlib"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-llvm-ranlib"
       - "/opt/cuda/bin/aarch64-linux-android-llvm-ranlib"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-llvm-ranlib"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-llvm-ranlib"
       - "/usr/local/sbin/aarch64-linux-android-llvm-ranlib"
       - "/usr/local/bin/aarch64-linux-android-llvm-ranlib"
       - "/usr/bin/aarch64-linux-android-llvm-ranlib"
@@ -2385,15 +2063,11 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -2438,15 +2112,11 @@ events:
       - "clang-scan-deps"
     candidate_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-      - "/home/ceo/.gemini/antigravity/bin/"
-      - "/home/ceo/.config/Antigravity/bin/"
       - "/home/ceo/.opencode/bin/"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/"
       - "/home/ceo/.local/bin/"
       - "/home/ceo/.npm-global/bin/"
       - "/opt/cuda/bin/"
-      - "/tmp/.mount_Antigr20RtUN/"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -2462,15 +2132,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/"
     searched_directories:
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-clang-scan-deps-17.0"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-clang-scan-deps-17.0"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/home/ceo/.local/bin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/opt/cuda/bin/aarch64-linux-android-clang-scan-deps-17.0"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-clang-scan-deps-17.0"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/usr/local/sbin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/usr/local/bin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/usr/bin/aarch64-linux-android-clang-scan-deps-17.0"
@@ -2485,15 +2151,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-clang-scan-deps-17.0"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-clang-scan-deps-17.0"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-clang-scan-deps-17"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-clang-scan-deps-17"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-clang-scan-deps-17"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-clang-scan-deps-17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-clang-scan-deps-17"
       - "/home/ceo/.local/bin/aarch64-linux-android-clang-scan-deps-17"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-clang-scan-deps-17"
       - "/opt/cuda/bin/aarch64-linux-android-clang-scan-deps-17"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-clang-scan-deps-17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-clang-scan-deps-17"
       - "/usr/local/sbin/aarch64-linux-android-clang-scan-deps-17"
       - "/usr/local/bin/aarch64-linux-android-clang-scan-deps-17"
       - "/usr/bin/aarch64-linux-android-clang-scan-deps-17"
@@ -2508,15 +2170,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-clang-scan-deps-17"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-clang-scan-deps-17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-clang-scan-deps17"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-clang-scan-deps17"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-clang-scan-deps17"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-clang-scan-deps17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-clang-scan-deps17"
       - "/home/ceo/.local/bin/aarch64-linux-android-clang-scan-deps17"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-clang-scan-deps17"
       - "/opt/cuda/bin/aarch64-linux-android-clang-scan-deps17"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-clang-scan-deps17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-clang-scan-deps17"
       - "/usr/local/sbin/aarch64-linux-android-clang-scan-deps17"
       - "/usr/local/bin/aarch64-linux-android-clang-scan-deps17"
       - "/usr/bin/aarch64-linux-android-clang-scan-deps17"
@@ -2531,15 +2189,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-clang-scan-deps17"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-clang-scan-deps17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-clang-scan-deps"
-      - "/home/ceo/.gemini/antigravity/bin/aarch64-linux-android-clang-scan-deps"
-      - "/home/ceo/.config/Antigravity/bin/aarch64-linux-android-clang-scan-deps"
       - "/home/ceo/.opencode/bin/aarch64-linux-android-clang-scan-deps"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/aarch64-linux-android-clang-scan-deps"
       - "/home/ceo/.local/bin/aarch64-linux-android-clang-scan-deps"
       - "/home/ceo/.npm-global/bin/aarch64-linux-android-clang-scan-deps"
       - "/opt/cuda/bin/aarch64-linux-android-clang-scan-deps"
-      - "/tmp/.mount_Antigr20RtUN/aarch64-linux-android-clang-scan-deps"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/aarch64-linux-android-clang-scan-deps"
       - "/usr/local/sbin/aarch64-linux-android-clang-scan-deps"
       - "/usr/local/bin/aarch64-linux-android-clang-scan-deps"
       - "/usr/bin/aarch64-linux-android-clang-scan-deps"
@@ -2554,15 +2208,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/aarch64-linux-android-clang-scan-deps"
       - "/usr/lib/aarch64-linux-android/24/aarch64-linux-android-clang-scan-deps"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang-scan-deps-17.0"
-      - "/home/ceo/.gemini/antigravity/bin/clang-scan-deps-17.0"
-      - "/home/ceo/.config/Antigravity/bin/clang-scan-deps-17.0"
       - "/home/ceo/.opencode/bin/clang-scan-deps-17.0"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/clang-scan-deps-17.0"
       - "/home/ceo/.local/bin/clang-scan-deps-17.0"
       - "/home/ceo/.npm-global/bin/clang-scan-deps-17.0"
       - "/opt/cuda/bin/clang-scan-deps-17.0"
-      - "/tmp/.mount_Antigr20RtUN/clang-scan-deps-17.0"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/clang-scan-deps-17.0"
       - "/usr/local/sbin/clang-scan-deps-17.0"
       - "/usr/local/bin/clang-scan-deps-17.0"
       - "/usr/bin/clang-scan-deps-17.0"
@@ -2577,15 +2227,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/clang-scan-deps-17.0"
       - "/usr/lib/aarch64-linux-android/24/clang-scan-deps-17.0"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang-scan-deps-17"
-      - "/home/ceo/.gemini/antigravity/bin/clang-scan-deps-17"
-      - "/home/ceo/.config/Antigravity/bin/clang-scan-deps-17"
       - "/home/ceo/.opencode/bin/clang-scan-deps-17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/clang-scan-deps-17"
       - "/home/ceo/.local/bin/clang-scan-deps-17"
       - "/home/ceo/.npm-global/bin/clang-scan-deps-17"
       - "/opt/cuda/bin/clang-scan-deps-17"
-      - "/tmp/.mount_Antigr20RtUN/clang-scan-deps-17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/clang-scan-deps-17"
       - "/usr/local/sbin/clang-scan-deps-17"
       - "/usr/local/bin/clang-scan-deps-17"
       - "/usr/bin/clang-scan-deps-17"
@@ -2600,15 +2246,11 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/clang-scan-deps-17"
       - "/usr/lib/aarch64-linux-android/24/clang-scan-deps-17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang-scan-deps17"
-      - "/home/ceo/.gemini/antigravity/bin/clang-scan-deps17"
-      - "/home/ceo/.config/Antigravity/bin/clang-scan-deps17"
       - "/home/ceo/.opencode/bin/clang-scan-deps17"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/clang-scan-deps17"
       - "/home/ceo/.local/bin/clang-scan-deps17"
       - "/home/ceo/.npm-global/bin/clang-scan-deps17"
       - "/opt/cuda/bin/clang-scan-deps17"
-      - "/tmp/.mount_Antigr20RtUN/clang-scan-deps17"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/clang-scan-deps17"
       - "/usr/local/sbin/clang-scan-deps17"
       - "/usr/local/bin/clang-scan-deps17"
       - "/usr/bin/clang-scan-deps17"
@@ -2623,29 +2265,21 @@ events:
       - "/usr/lib/aarch64-linux-android/24/sbin/clang-scan-deps17"
       - "/usr/lib/aarch64-linux-android/24/clang-scan-deps17"
       - "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang-scan-deps"
-      - "/home/ceo/.gemini/antigravity/bin/clang-scan-deps"
-      - "/home/ceo/.config/Antigravity/bin/clang-scan-deps"
       - "/home/ceo/.opencode/bin/clang-scan-deps"
       - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin/clang-scan-deps"
       - "/home/ceo/.local/bin/clang-scan-deps"
       - "/home/ceo/.npm-global/bin/clang-scan-deps"
       - "/opt/cuda/bin/clang-scan-deps"
-      - "/tmp/.mount_Antigr20RtUN/clang-scan-deps"
-      - "/tmp/.mount_Antigr20RtUN/usr/sbin/clang-scan-deps"
       - "/usr/local/sbin/clang-scan-deps"
       - "/usr/local/bin/clang-scan-deps"
     found: "/usr/bin/clang-scan-deps"
     search_context:
       ENV{PATH}:
-        - "/home/ceo/.gemini/antigravity/bin"
-        - "/home/ceo/.config/Antigravity/bin"
         - "/home/ceo/.opencode/bin"
         - "/home/ceo/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/bin"
         - "/home/ceo/.local/bin"
         - "/home/ceo/.npm-global/bin"
         - "/opt/cuda/bin"
-        - "/tmp/.mount_Antigr20RtUN"
-        - "/tmp/.mount_Antigr20RtUN/usr/sbin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -2671,8 +2305,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-6UNPjp"
-      binary: "/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-6UNPjp"
+      source: "/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-haHR5a"
+      binary: "/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-haHR5a"
     cmakeVariables:
       ANDROID_ABI: "arm64-v8a"
       ANDROID_ARM_MODE: "thumb"
@@ -2696,17 +2330,17 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-6UNPjp'
+        Change Dir: '/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-haHR5a'
         
-        Run Build Command(s): /home/ceo/.local/bin/ninja -v cmTC_75216
-        [1/2] /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /home/ceo/.local/bin/ninja -v cmTC_b48e3
+        [1/2] /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
         Target: aarch64-none-linux-android24
         Thread model: posix
         InstalledDir: /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin
         Found CUDA installation: /opt/cuda, version 
          (in-process)
-         "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android24 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-6UNPjp -resource-dir /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -D NDEBUG -isysroot /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -O2 -Wformat -fdebug-compilation-dir=/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-6UNPjp -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+         "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android24 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-haHR5a -resource-dir /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -D NDEBUG -isysroot /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -O2 -Wformat -fdebug-compilation-dir=/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-haHR5a -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu
         ignoring nonexistent directory "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"
         ignoring nonexistent directory "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
@@ -2716,13 +2350,13 @@ events:
          /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android
          /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
         End of search list.
-        [2/2] : && /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions  -O2 -g -DNDEBUG -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--gc-sections -Qunused-arguments -Wl,--no-undefined  -Wl,--gc-sections -v CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -o cmTC_75216  -latomic -lm && :
+        [2/2] : && /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions  -O2 -g -DNDEBUG -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--gc-sections -Qunused-arguments -Wl,--no-undefined  -Wl,--gc-sections -v CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -o cmTC_b48e3  -latomic -lm && :
         Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
         Target: aarch64-none-linux-android24
         Thread model: posix
         InstalledDir: /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin
         Found CUDA installation: /opt/cuda, version 
-         "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_75216 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -latomic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o
+         "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_b48e3 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -latomic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o
         
       exitCode: 0
   -
@@ -2755,17 +2389,17 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: '/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-6UNPjp']
+        ignore line: [Change Dir: '/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-haHR5a']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/ceo/.local/bin/ninja -v cmTC_75216]
-        ignore line: [[1/2] /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /home/ceo/.local/bin/ninja -v cmTC_b48e3]
+        ignore line: [[1/2] /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
         ignore line: [Target: aarch64-none-linux-android24]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin]
         ignore line: [Found CUDA installation: /opt/cuda  version ]
         ignore line: [ (in-process)]
-        ignore line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android24 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-6UNPjp -resource-dir /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -D NDEBUG -isysroot /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -O2 -Wformat -fdebug-compilation-dir=/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-6UNPjp -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android24 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-haHR5a -resource-dir /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -D NDEBUG -isysroot /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -O2 -Wformat -fdebug-compilation-dir=/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-haHR5a -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu]
         ignore line: [ignoring nonexistent directory "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
@@ -2775,15 +2409,15 @@ events:
         ignore line: [ /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
         ignore line: [ /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions  -O2 -g -DNDEBUG -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --gc-sections -Qunused-arguments -Wl --no-undefined  -Wl --gc-sections -v CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -o cmTC_75216  -latomic -lm && :]
+        ignore line: [[2/2] : && /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions  -O2 -g -DNDEBUG -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --gc-sections -Qunused-arguments -Wl --no-undefined  -Wl --gc-sections -v CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -o cmTC_b48e3  -latomic -lm && :]
         ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
         ignore line: [Target: aarch64-none-linux-android24]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin]
         ignore line: [Found CUDA installation: /opt/cuda  version ]
-        link line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_75216 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -latomic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o] ==> linker [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld]
-        link line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_75216 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -latomic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o] ==> linker architecture flags [-m;aarch64linux]
-        link line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_75216 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o -latomic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+        link line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_b48e3 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -latomic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o] ==> linker [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld]
+        link line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_b48e3 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -latomic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o] ==> linker architecture flags [-m;aarch64linux]
+        link line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_b48e3 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o -latomic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
           arg [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld] ==> ignore
           arg [--sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
           arg [-pie] ==> ignore
@@ -2799,7 +2433,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/system/bin/linker64] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_75216] ==> ignore
+          arg [cmTC_b48e3] ==> ignore
           arg [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o] ==> obj [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o]
           arg [-L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> dir [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
           arg [-L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24] ==> dir [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24]
@@ -2812,7 +2446,7 @@ events:
           arg [--gc-sections] ==> ignore
           arg [--no-undefined] ==> ignore
           arg [--gc-sections] ==> ignore
-          arg [CMakeFiles/cmTC_75216.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_b48e3.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-latomic] ==> lib [atomic]
           arg [-lm] ==> lib [m]
           arg [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
@@ -2855,8 +2489,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-GDGP5d"
-      binary: "/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-GDGP5d"
+      source: "/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-fKUFVU"
+      binary: "/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-fKUFVU"
     cmakeVariables:
       ANDROID_ABI: "arm64-v8a"
       ANDROID_ARM_MODE: "thumb"
@@ -2882,17 +2516,17 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-GDGP5d'
+        Change Dir: '/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-fKUFVU'
         
-        Run Build Command(s): /home/ceo/.local/bin/ninja -v cmTC_67c61
-        [1/2] /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions -frtti -stdlib=libc++  -O2 -g -DNDEBUG -std=gnu++20 -fPIE   -v -MD -MT CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /home/ceo/.local/bin/ninja -v cmTC_04a99
+        [1/2] /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions -frtti -stdlib=libc++  -O2 -g -DNDEBUG -std=gnu++20 -fPIE   -v -MD -MT CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
         Target: aarch64-none-linux-android24
         Thread model: posix
         InstalledDir: /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin
         Found CUDA installation: /opt/cuda, version 
          (in-process)
-         "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android24 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-GDGP5d -resource-dir /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -D NDEBUG -isysroot /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -O2 -Wformat -std=gnu++20 -fdeprecated-macro -fdebug-compilation-dir=/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-GDGP5d -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android24 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-fKUFVU -resource-dir /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -D NDEBUG -isysroot /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -O2 -Wformat -std=gnu++20 -fdeprecated-macro -fdebug-compilation-dir=/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-fKUFVU -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu
         ignoring nonexistent directory "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"
         ignoring nonexistent directory "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
@@ -2903,13 +2537,13 @@ events:
          /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android
          /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
         End of search list.
-        [2/2] : && /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions -frtti -stdlib=libc++  -O2 -g -DNDEBUG -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--gc-sections -Qunused-arguments -Wl,--no-undefined  -Wl,--gc-sections -v CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_67c61  -static-libstdc++ -latomic -lm && :
+        [2/2] : && /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions -frtti -stdlib=libc++  -O2 -g -DNDEBUG -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--gc-sections -Qunused-arguments -Wl,--no-undefined  -Wl,--gc-sections -v CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_04a99  -static-libstdc++ -latomic -lm && :
         Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
         Target: aarch64-none-linux-android24
         Thread model: posix
         InstalledDir: /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin
         Found CUDA installation: /opt/cuda, version 
-         "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_67c61 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -latomic -lm -Bstatic -lc++ -Bdynamic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o
+         "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_04a99 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -latomic -lm -Bstatic -lc++ -Bdynamic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o
         
       exitCode: 0
   -
@@ -2944,17 +2578,17 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: '/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-GDGP5d']
+        ignore line: [Change Dir: '/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-fKUFVU']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/ceo/.local/bin/ninja -v cmTC_67c61]
-        ignore line: [[1/2] /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions -frtti -stdlib=libc++  -O2 -g -DNDEBUG -std=gnu++20 -fPIE   -v -MD -MT CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /home/ceo/.local/bin/ninja -v cmTC_04a99]
+        ignore line: [[1/2] /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions -frtti -stdlib=libc++  -O2 -g -DNDEBUG -std=gnu++20 -fPIE   -v -MD -MT CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
         ignore line: [Target: aarch64-none-linux-android24]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin]
         ignore line: [Found CUDA installation: /opt/cuda  version ]
         ignore line: [ (in-process)]
-        ignore line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android24 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-GDGP5d -resource-dir /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -D NDEBUG -isysroot /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -O2 -Wformat -std=gnu++20 -fdeprecated-macro -fdebug-compilation-dir=/home/ceo/Downloads/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-GDGP5d -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android24 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-fKUFVU -resource-dir /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -D NDEBUG -isysroot /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -O2 -Wformat -std=gnu++20 -fdeprecated-macro -fdebug-compilation-dir=/home/ceo/audiofixer/build/CMakeFiles/CMakeScratch/TryCompile-fKUFVU -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu]
         ignore line: [ignoring nonexistent directory "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
@@ -2965,15 +2599,15 @@ events:
         ignore line: [ /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
         ignore line: [ /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions -frtti -stdlib=libc++  -O2 -g -DNDEBUG -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --gc-sections -Qunused-arguments -Wl --no-undefined  -Wl --gc-sections -v CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_67c61  -static-libstdc++ -latomic -lm && :]
+        ignore line: [[2/2] : && /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -fexceptions -frtti -stdlib=libc++  -O2 -g -DNDEBUG -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --gc-sections -Qunused-arguments -Wl --no-undefined  -Wl --gc-sections -v CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_04a99  -static-libstdc++ -latomic -lm && :]
         ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
         ignore line: [Target: aarch64-none-linux-android24]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin]
         ignore line: [Found CUDA installation: /opt/cuda  version ]
-        link line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_67c61 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -latomic -lm -Bstatic -lc++ -Bdynamic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o] ==> linker [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld]
-        link line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_67c61 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -latomic -lm -Bstatic -lc++ -Bdynamic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o] ==> linker architecture flags [-m;aarch64linux]
-        link line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_67c61 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o -latomic -lm -Bstatic -lc++ -Bdynamic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+        link line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_04a99 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -latomic -lm -Bstatic -lc++ -Bdynamic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o] ==> linker [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld]
+        link line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_04a99 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -latomic -lm -Bstatic -lc++ -Bdynamic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o] ==> linker architecture flags [-m;aarch64linux]
+        link line: [ "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_04a99 /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o -latomic -lm -Bstatic -lc++ -Bdynamic -lm /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
           arg [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld] ==> ignore
           arg [--sysroot=/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
           arg [-pie] ==> ignore
@@ -2989,7 +2623,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/system/bin/linker64] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_67c61] ==> ignore
+          arg [cmTC_04a99] ==> ignore
           arg [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o] ==> obj [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o]
           arg [-L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> dir [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
           arg [-L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24] ==> dir [/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24]
@@ -3002,7 +2636,7 @@ events:
           arg [--gc-sections] ==> ignore
           arg [--no-undefined] ==> ignore
           arg [--gc-sections] ==> ignore
-          arg [CMakeFiles/cmTC_67c61.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_04a99.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-latomic] ==> lib [atomic]
           arg [-lm] ==> lib [m]
           arg [-Bstatic] ==> search static

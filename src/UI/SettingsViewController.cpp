@@ -13,8 +13,13 @@
 #include "bsml/shared/BSML-Lite/Creation/Layout.hpp"
 #include "HMUI/CurvedTextMeshPro.hpp"
 #include "UnityEngine/AudioSettings.hpp"
+#include "UnityEngine/UI/LayoutElement.hpp"
+#include "UnityEngine/GameObject.hpp"
+#include "UnityEngine/Object.hpp"
+#include "UI/CalibrationTicker.hpp"
 #include "beatsaber-hook/shared/utils/typedefs-wrappers.hpp"
 
+#include <algorithm>
 #include <iomanip>
 #include <sstream>
 
@@ -22,6 +27,21 @@ namespace {
 SafePtrUnity<HMUI::CurvedTextMeshPro> gDeviceInfoText;
 SafePtrUnity<HMUI::CurvedTextMeshPro> gCalibrationStatusText;
 SafePtrUnity<BSML::IncrementSetting> gOffsetSetting;
+SafePtrUnity<AdaptiveAudioLatency::CalibrationTicker> gTicker;
+
+// Plain CreateText is sized for a single line; multi-line status blocks need an
+// explicitly taller LayoutElement or the vertical layout group only reserves
+// single-line height and later controls get drawn on top of the overflow.
+void sizeMultilineText(HMUI::CurvedTextMeshPro* text, const std::string& content) {
+    if (!text) return;
+    int lines = static_cast<int>(std::count(content.begin(), content.end(), '\n')) + 1;
+    auto* layout = text->GetComponent<UnityEngine::UI::LayoutElement*>();
+    if (!layout) {
+        layout = text->get_gameObject()->AddComponent<UnityEngine::UI::LayoutElement*>();
+    }
+    // ~9 units/line matches BSML-Lite's default single-line row height; tune to taste.
+    layout->set_preferredHeight(9.0f * static_cast<float>(lines));
+}
 
 std::string formatDeviceInfo() {
     auto dev = BluetoothDeviceMonitor::get().getCurrentDevice();
@@ -56,14 +76,22 @@ namespace SettingsViewController {
 
 void updateUI() {
     if (gDeviceInfoText) {
-        gDeviceInfoText->set_text(StringW(formatDeviceInfo()));
+        auto content = formatDeviceInfo();
+        gDeviceInfoText->set_text(StringW(content));
+        sizeMultilineText(gDeviceInfoText.ptr(), content);
     }
     if (gCalibrationStatusText) {
-        gCalibrationStatusText->set_text(StringW(formatCalibrationInfo()));
+        auto content = formatCalibrationInfo();
+        gCalibrationStatusText->set_text(StringW(content));
+        sizeMultilineText(gCalibrationStatusText.ptr(), content);
     }
     if (gOffsetSetting) {
         gOffsetSetting->set_Value(AudioOffsetManager::get().getBaseOffsetMs());
     }
+}
+
+HMUI::CurvedTextMeshPro* getCalibrationIndicator() {
+    return gCalibrationStatusText.ptr();
 }
 
 void registerMenu() {
@@ -89,6 +117,7 @@ void registerMenu() {
             // 2. Bluetooth Device Info Header
             BSML::Lite::CreateText(transform, u"<b>--- Bluetooth & Audio Device ---</b>");
             gDeviceInfoText = BSML::Lite::CreateText(transform, StringW(formatDeviceInfo()));
+            sizeMultilineText(gDeviceInfoText.ptr(), formatDeviceInfo());
 
             // Refresh Device Button
             BSML::Lite::CreateUIButton(transform, u"Refresh Bluetooth Status", []() {
@@ -131,6 +160,13 @@ void registerMenu() {
             // 4. Calibration Section
             BSML::Lite::CreateText(transform, u"<b>--- AirPods / Device Calibration ---</b>");
             gCalibrationStatusText = BSML::Lite::CreateText(transform, StringW(formatCalibrationInfo()));
+            sizeMultilineText(gCalibrationStatusText.ptr(), formatCalibrationInfo());
+
+            if (!gTicker) {
+                auto tickerGo = UnityEngine::GameObject::New_ctor(StringW("AdaptiveAudioLatency_CalibrationTicker"));
+                UnityEngine::Object::DontDestroyOnLoad(tickerGo);
+                gTicker = tickerGo->AddComponent<AdaptiveAudioLatency::CalibrationTicker*>();
+            }
 
             LatencyCalibration::get().setStatsUpdateCallback([](const CalibrationStats&) {
                 updateUI();
